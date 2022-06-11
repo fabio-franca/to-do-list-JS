@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow Bold', sans-serif, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.704);
+    background-image: url("../images/fundos-70-x-70-centimetros-madeira-Fundo-Fotografico-Madeira-em-Tecido-M210-1598438411862.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 20px;
+    width: 500px;
+    max-height: auto;
+    border: 3px solid rgb(163, 129, 7);
+    background-color: rgb(242, 242, 242);
+}
+
+.titulo {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: rgb(171, 120, 0);
+    margin-bottom: 20px;
+}
+
+#inserir_tarefa {
+    margin: 10px;
+}
+
+#inserir_tarefa input{
+    width: 300px;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    color: rgb(141, 98, 0);
+    font-size: 15px;
+}
+
+#inserir_tarefa button {
+    padding: 6px;
+    background-color: rgba(204, 217, 61, 0.704);
+    cursor: pointer;
+    border: none;
+    width: 70px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+#inserir_tarefa button:hover {
+    padding: 6px;
+    background-color: rgba(163, 178, 0, 0.704);
+    cursor: pointer;
+    border: none;
+    width: 70px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 1.5rem;
+    border-top: 2px solid rgb(163, 129, 7);
+    width: 100%;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: row;
+    margin: 6px;
+}
+
+.task-item p {
+    margin-left: 5px;
+}
+
+:checked + p {
+    text-decoration: line-through;
+    color: grey;
+  }
